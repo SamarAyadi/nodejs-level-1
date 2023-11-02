@@ -12,10 +12,17 @@
     </style>
   </head>
   <body>
-    <h1>What is your name?</h1>
-    <input type="text" />
-    <br />
-    <br />
-    <button>Send to DB</button>
+    <form action="/all-articles" method="post">
+      <label for="title">Article title:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="summary">Article summary:</label>
+      <input type="text" id="summary" name="summary" required />
+
+      <label for="body">Article body:</label>
+      <textarea id="body" name="body" required></textarea>
+
+      <button class="create">Create</button>
+    </form>
   </body>
 </html>
